@@ -1,0 +1,6 @@
+numpy>=1.26
+netCDF4
+pandas
+xarray
+# optional, only for src/run_catalog_mpi.py
+# mpi4py

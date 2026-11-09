@@ -1,0 +1,24 @@
+; TOOCAN-HPC parameter file (same `key = value` syntax as the original TOOCAN).
+; Comments MUST be on their own line (start with ';'); no trailing comments.
+; The science parameters below are those of the original TOOCAN v2.08 C5 configuration.
+; Do not change VolumeImage / overlap_window_size (chunking affects labels) or the thresholds without re-validating.
+version = 2.08
+; pathout_TOOCAN is overridden by --out (segmentation); the catalog stage reads masks from --masks
+pathout_TOOCAN = ./outputs
+netcdf_compression_level = 4
+mask_file_layout = daily
+
+; --- hierarchical BT thresholds (K): 190,192,...,236 (range(min, max+step, step), as original)
+minBT_threshold = 190
+maxBT_threshold = 235
+stepBT_threshold = 2
+; --- region growing: a neighbour may be up to deltaBT_Spread K COLDER than the pixel it is grown from
+deltaBT_Spread = 1
+; --- object criteria: area (km2) >= minAreaSeed for minLifetime consecutive time slots
+minAreaSeed = 625
+minLifetime = 3
+firstlabel = 1
+; --- chunking of the serial chain: 72 slots per chunk, 6 slots overlap
+VolumeImage = 72
+overlap_window_size = 6
+nbMaxCluster = 100000

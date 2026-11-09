@@ -1,0 +1,7 @@
+TOOCAN-HPC is a performance re-implementation of the segmentation and catalog stages of TOOCAN
+(Tracking Of Organized Convective Algorithm using 3-dimensional segmentatioN), written by Thomas Fiolleau:
+https://gitlab.in2p3.fr/thomas.fiolleau1/toocan-python  (GPL-3.0).
+The algorithm, parameters and output formats are those of the original; this repository does not modify or redistribute
+the original code. Please cite:
+  Fiolleau, T. and R. Roca, 2013, IEEE TGRS 51(7), 4302-4315, doi:10.1109/TGRS.2012.2227762
+  Fiolleau, T. and R. Roca, 2024, Earth Syst. Sci. Data 16, 4021-4050, doi:10.5194/essd-16-4021-2024

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.so
+*.so.new
+outputs/
+logs/
+demo_run/
+demo_data/
+config/geo.dat
+.state/

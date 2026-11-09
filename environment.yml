@@ -1,0 +1,10 @@
+name: toocan-hpc
+channels: [conda-forge]
+dependencies:
+  - python>=3.9
+  - numpy
+  - netcdf4
+  - pandas
+  - xarray
+  - compilers      # gcc with OpenMP, if the system has none
+  # - mpi4py       # optional: MPI catalog stage

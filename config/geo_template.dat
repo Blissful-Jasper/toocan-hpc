@@ -1,0 +1,16 @@
+; Input-data description.  Copy to config/geo.dat and edit the three marked lines.
+; Comments MUST be on their own line (start with ';').
+; REGION: name used in the output directory tree
+REGION = MY_REGION
+; platform / channel labels, only written to output attributes
+GEOplatform = MODEL
+channel = OLR
+; temporal spacing of the input in minutes (all slots of a day file must be equally spaced)
+temporalresolution = 20
+; grid spacing in degrees (informational)
+spatialresolution = 0.25
+; path_ir: ROOT directory searched recursively for *.nc daily files. The 8-digit YYYYMMDD in the file name is used
+; to pick files in [start,end]. Each file: variable rlut (or LWNTA), W m-2, dims (time,lat,lon), CF time axis.
+path_ir = /path/to/olr_archive
+; file_navigation: lat/lon/pixel-area file; create it with tools/make_navigation.py
+file_navigation = /path/to/navigation.nc
